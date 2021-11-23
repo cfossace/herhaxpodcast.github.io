@@ -1,0 +1,327 @@
+/*!
+ * Start Bootstrap - Agency v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/agency)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
+ */
+
+
+body {
+  overflow-x: hidden;
+  font-family: 'Karla', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 100%
+  margin: 0;}
+
+#site-wrapper{
+  overflow-x:hidden;
+}
+
+p {
+  line-height: 1.75;
+  font-size: 20px;
+  color: navy;
+}
+
+p.description{
+  font-size: 22px;
+}
+
+
+/* Link Hover Effect: Creates Light Blue Underline */
+
+a,a:visited,a:hover,a:active{
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:relative;
+  transition:0.5s color ease;
+  text-decoration:none;
+  color:#7ad9d7;
+}
+
+a.before:before,a.after:after{
+  content: "";
+  transition:0.5s all ease;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:absolute;
+}
+
+/*makes underline on bottom of link*/
+a.after:after{
+  bottom:-2px;
+}
+
+a.before:before,a.after:after{
+  height:4px;
+  width:0;
+  background:#7ad9d7; /*Light Blue Underline*/
+}
+a.first:after{
+  left:0;
+}
+a.before:hover:before,a.after:hover:after{
+  width:100%;
+}
+
+
+
+/* Link Hover Effect: Creates Light Blue Highlight */
+a.highlight {
+  text-decoration:none;
+  color: #7ad9d7;
+  transition: background 0.1s cubic-bezier(.33,.66,.66,1);
+}
+
+
+
+a.highlight:hover {
+  background: #7ad9d7; /*Light blue*/
+  color: inherit;
+}
+
+  background: #ef8b80; /*coral*/
+
+
+
+/*--------------------------------------------*/
+/* Containers for Portfolio/Projects and Studios */
+
+@media only screen and (min-width: 1200px){
+#portfolio .container {
+  max-width: 90%;}
+
+#studios .container{
+  max-width: 80%;}
+}
+
+
+/*-------------------------------------------*/
+
+#studios a {
+  text-transform: uppercase;
+}
+
+
+#location {
+  max-width: 100%;
+  padding:0;
+  background-color: #ffffff /*#a4d1fc*/;
+  text-align: center;
+}
+
+.col-centered{
+float: none;
+margin: 0 auto;
+}
+
+.bg-light-grey {
+  background-color: #92a2d6; /*grey*/
+}
+
+
+.bg-blue {
+  background-color: #ffffff; /*dark blue*/
+}
+
+
+section {
+  padding: 80px 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Unica One', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 3px;
+  color: rgb(16, 13, 31);
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  font-weight: 700;
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+/*------------------------------*/
+
+#studios h1, #portfolio h1 {
+  margin-bottom: 80px;
+}
+
+#about h1, #events h1 {
+  margin-bottom: 20px;
+}
+
+#events h2 {
+  margin-bottom: 10px;
+}
+
+hr {
+  border: 1px solid #ccc;
+  margin: 40px 0px;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 130px 0; }
+  }
+
+
+img::selection {
+  background: transparent; }
+
+img::-moz-selection {
+  background: transparent; }
+
+body {
+  -webkit-tap-highlight-color: #eeeeee; }
+
+#mainNav {
+  background-color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 4px;}
+  #mainNav .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 13px;
+    color: rgb(3, 4, 20);
+    border: 0;
+    background-color: #7ad9d7; /*light blue*/
+    font-family: 'Unica One', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-weight: 400;
+    padding: 8px 0;
+    color: rgb(3, 4, 20);}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent; }
+    #mainNav .navbar-brand {
+      font-size: 1.75em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+    #mainNav .navbar-nav .nav-item .nav-link {
+      margin: 0.7em 1.1em !important; }
+    #mainNav.navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: #ffffff; }
+      #mainNav.navbar-shrink .navbar-brand {
+        font-size: 1.25em;
+        padding: 12px 0; } }
+
+
+@media (max-width: 480px) {
+  h1.heading {
+    font-size: 50px;
+  }
+}
+
+#portfolio .portfolio-item {
+  right: 0;
+  margin: 0 0 15px; }
+  #portfolio .portfolio-item .portfolio-link {
+    position: relative;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    cursor: pointer; }
+    #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      transition: all ease 0.5s;
+      opacity: 0;
+      background: rgba(34,35,42, 0.9); } /*edit portfolio hover background colors */
+      #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+        opacity: 1; }
+      #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        text-decoration: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        word-wrap: break-word;}
+
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px; } }
+
+.team-member {
+  margin-bottom: 50px;
+  text-align: center; }
+  .team-member img {
+    width: 225px;
+    height: 225px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;}
+  .team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none; }
+  .team-member p {
+    margin-top: 0; }
+
+.team-member img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+  background-color: #ffffff/*#a4d1fc;*/;}
+  footer span.copyright {
+    letter-spacing: 0.8px;
+    color:rgb(3, 4, 20);;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;}
+
+ul.social-buttons {
+  margin-bottom: 0; }
+  ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color:rgb(3, 4, 20);;
+    border-radius: 100%;
+    outline: none;
+    background-color: #ffffff;/* #a4d1fc;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+    ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+      background-color: #7ad9d7; /*light blue*/ }
